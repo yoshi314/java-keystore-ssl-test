@@ -17,6 +17,12 @@ mvn clean package
 java -jar <jar-file-name> [--forced] <https://address.server.edu> [timeout]
 ```
 
+## Testing against custom keystore
+
+```
+java -jar <jar-file-name> -Djavax.net.ssl.trustStore=your-keystore-file -Djavax.net.ssl.trustStorePassword=sekrit <https://address.server.edu> [timeout]
+```
+
 ## Sample
 
 ### Successful connection
